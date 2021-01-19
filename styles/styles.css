@@ -1,0 +1,17 @@
+article {
+    display: grid;
+    grid-template-columns: 1fr 2.5cm [start] 20cm [end] 2.5cm 1fr;
+}
+
+article * {
+    grid-column: start / end;
+}
+
+@media (max-width: 25cm) {
+    article { grid-template-columns: 1fr 10% [start] 80% [end] 10% 1fr; }
+}
+
+.page-title {
+    font-family: "Montserrat";
+    font-size: 32px;
+}
